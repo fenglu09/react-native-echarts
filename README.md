@@ -8,6 +8,11 @@
 
 $ npm install native-echarts --save
 
+## Note
+
+## Android
+copy `tpl.html` to `PROJECT_ROOT/android/app/src/main/assets/echarts/tpl.html`
+
 ## Usage
 
 The Usage is complete consistent with Echarts
