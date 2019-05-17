@@ -15,6 +15,7 @@ export default class App extends Component {
     return (
       <View style={{ flex: 1, height: this.props.height || 400, }}>
         <WebView
+          originWhitelist={['*']}//RN0.56开始，本地的html加载 添加白名单
           ref="chart"
           // scalesPageToFit={false}
           scrollEnabled={false}
