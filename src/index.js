@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { WebView, View } from 'react-native';
+import { View } from 'react-native';
 import { Container, Echarts } from './components'
+import WebView from 'react-native-webview';
 
 export default class App extends Component {
   render() {
