@@ -18,6 +18,8 @@ export default function renderChart(props) {
         }
         return val;
       });
+      window.postMessage = function(data) {
+      window.ReactNativeWebView.postMessage(data)};
       window.postMessage(paramsString);
     });
   `
