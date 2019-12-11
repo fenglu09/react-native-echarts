@@ -12,10 +12,22 @@ export default class App extends Component {
     }
   }
 
+  /** add by david at 2019-12-10 start  */
+  handleOnLoad() {
+    if (this.props.loadFinishCallback) {
+      this.props.loadFinishCallback()
+    }
+  }
+  /** add by david at 2019-12-10 end  */
+
+
+
+
   render() {
     return (
       <View style={{ flex: 1, height: this.props.height || 400, }}>
         <WebView
+          onLoad={() => { this.handleOnLoad() }}
           originWhitelist={['*']}//RN0.56开始，本地的html加载 添加白名单
           ref="chart"
           // scalesPageToFit={false}
